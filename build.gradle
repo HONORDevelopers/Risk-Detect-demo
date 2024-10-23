@@ -1,0 +1,16 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        maven {url 'https://developer.hihonor.com/repo'}
+    }
+    dependencies {
+        classpath 'com.hihonor.mcs:magic-android:34.38.1.200'
+    }
+}
+
+plugins {
+    id 'com.android.application' version '7.0.2' apply false
+    id 'com.android.library' version '7.0.2' apply false
+}

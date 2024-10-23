@@ -1,0 +1,25 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        // 配置SDK的Maven仓地址。
+        maven {
+            url 'https://developer.hihonor.com/repo'
+        }
+    }
+}
+
+rootProject.name = "RiskDetectDemo"
+include ':app'
+
+dependencyResolutionManagement {
+    repositories {
+        google()
+        mavenCentral()
+        // 配置SDK的Maven仓地址。
+        maven {
+            url 'https://developer.hihonor.com/repo'
+        }
+    }
+}
